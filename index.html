@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GTA VI - Countdown</title>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon"> <!-- Optional: Add a favicon -->
+</head>
+<body>
+    <div class="video-background-container">
+        <!-- You can replace this with a high-quality, short, looping video -->
+        <!-- For now, a static image or complex gradient will be handled by CSS -->
+    </div>
+    <div class="overlay"></div>
+
+    <header>
+        <div class="logo">
+            <h1>GTA <span class="vi-roman">VI</span></h1>
+            <p>THE COUNTDOWN BEGINS</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="countdown-section">
+            <h2>LAUNCHING IN</h2>
+            <div id="countdown-timer">
+                <div class="time-block">
+                    <span id="days" class="time-value">00</span>
+                    <span class="time-label">Days</span>
+                </div>
+                <div class="time-block">
+                    <span id="hours" class="time-value">00</span>
+                    <span class="time-label">Hours</span>
+                </div>
+                <div class="time-block">
+                    <span id="minutes" class="time-value">00</span>
+                    <span class="time-label">Minutes</span>
+                </div>
+                <div class="time-block">
+                    <span id="seconds" class="time-value">00</span>
+                    <span class="time-label">Seconds</span>
+                </div>
+            </div>
+            <p class="release-info">
+                Releasing: May 26, 2026 - 12:00 AM (Europe/London Time)
+            </p>
+            <p class="release-info local-info">
+                Your local time will adjust accordingly.
+            </p>
+        </section>
+
+        <section class="info-section">
+            <div class="info-card">
+                <h3>Stay Updated</h3>
+                <p>Follow official Rockstar Games channels for the latest news and announcements.</p>
+                <a href="https://www.rockstargames.com/" target="_blank" class="btn">Rockstar Games</a>
+                <a href="https://twitter.com/RockstarGames" target="_blank" class="btn btn-secondary">Twitter / X</a>
+            </div>
+            <div class="info-card">
+                <h3>Anticipation is Building</h3>
+                <p>The next chapter in the Grand Theft Auto series is on its way. Get ready for a new era of open-world adventure.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© <span id="current-year"></span> Rockstar Games. All trademarks are property of their respective owners. This is a fan-made countdown.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
