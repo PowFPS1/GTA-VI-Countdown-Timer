@@ -1,9 +1,9 @@
 :root {
-    --primary-color: #ff3183; /* GTA Vice City Pink */
-    --secondary-color: #00e8f4; /* GTA Vice City Cyan */
-    --background-color: #0c0c1e; /* Deep dark blue/purple */
+    --primary-color: #ff3183;
+    --secondary-color: #00e8f4;
+    --background-color: #0c0c1e;
     --text-color: #e0e0e0;
-    --card-bg: rgba(20, 20, 40, 0.7); /* Semi-transparent dark card */
+    --card-bg: rgba(20, 20, 40, 0.7);
     --glow-primary: 0 0 15px var(--primary-color), 0 0 30px var(--primary-color);
     --glow-secondary: 0 0 15px var(--secondary-color), 0 0 30px var(--secondary-color);
     --font-display: 'Rajdhani', sans-serif;
@@ -21,7 +21,7 @@ body {
     background-color: var(--background-color);
     color: var(--text-color);
     line-height: 1.6;
-    overflow-x: hidden; /* Prevent horizontal scroll */
+    overflow-x: hidden;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -34,10 +34,7 @@ body {
     width: 100%;
     height: 100%;
     z-index: -2;
-    /* If using a video:
-    object-fit: cover; */
-
-    /* If using a complex gradient/image: */
+    
     background-image:
         radial-gradient(circle at 10% 20%, rgba(255, 49, 131, 0.3), transparent 50%),
         radial-gradient(circle at 90% 80%, rgba(0, 232, 244, 0.3), transparent 50%),
@@ -59,7 +56,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Darken the background a bit */
+    background-color: rgba(0, 0, 0, 0.5);
     z-index: -1;
 }
 
@@ -104,7 +101,7 @@ main {
 .countdown-section {
     text-align: center;
     margin-bottom: 40px;
-    animation: fadeInUp 1s ease-out 0.3s backwards; /* backwards fills animation before it starts */
+    animation: fadeInUp 1s ease-out 0.3s backwards;
 }
 
 .countdown-section h2 {
@@ -120,18 +117,18 @@ main {
 #countdown-timer {
     display: flex;
     justify-content: center;
-    gap: 15px; /* Gap between time blocks */
-    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    gap: 15px;
+    flex-wrap: wrap;
 }
 
 .time-block {
     background: rgba(255, 255, 255, 0.05);
     padding: 20px;
     border-radius: 10px;
-    min-width: 100px; /* Minimum width for each block */
+    min-width: 100px;
     border: 1px solid rgba(255, 255, 255, 0.1);
     box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-    backdrop-filter: blur(5px); /* Frosted glass effect */
+    backdrop-filter: blur(5px);
 }
 
 .time-value {
@@ -182,7 +179,7 @@ main {
     border: 1px solid rgba(255, 255, 255, 0.1);
     box-shadow: 0 5px 20px rgba(0,0,0,0.3);
     flex: 1;
-    min-width: 280px; /* Ensure cards don't get too narrow */
+    min-width: 280px;
     max-width: 400px;
     backdrop-filter: blur(8px);
 }
@@ -249,7 +246,6 @@ footer {
     to { opacity: 1; transform: translateY(0); }
 }
 
-/* Responsive adjustments */
 @media (max-width: 768px) {
     .logo h1 {
         letter-spacing: 1px;
