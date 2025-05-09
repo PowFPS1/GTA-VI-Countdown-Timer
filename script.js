@@ -1,8 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Set target date: May 26, 2026, 00:00:00 Europe/London time (BST = UTC+1)
-    // This is May 25, 2026, 23:00:00 UTC
     const countDownDate = new Date(Date.UTC(2026, 4, 25, 23, 0, 0)).getTime();
-    // Note: JavaScript months are 0-indexed (January is 0, May is 4)
 
     const daysEl = document.getElementById('days');
     const hoursEl = document.getElementById('hours');
@@ -19,7 +16,6 @@ document.addEventListener('DOMContentLoaded', () => {
             clearInterval(interval);
             countdownTimerEl.innerHTML = "<div class='released-message'>GTA VI HAS BEEN RELEASED!</div>";
             countdownSectionH2.textContent = "IT'S HERE!";
-            // You might want to style .released-message in CSS
             const releasedMessageStyle = document.createElement('style');
             releasedMessageStyle.innerHTML = `
                 .released-message {
@@ -46,13 +42,10 @@ document.addEventListener('DOMContentLoaded', () => {
         minutesEl.textContent = String(minutes).padStart(2, '0');
         secondsEl.textContent = String(seconds).padStart(2, '0');
     }
-
-    // Update the countdown every 1 second
+    
     const interval = setInterval(updateCountdown, 1000);
 
-    // Initial call to display immediately
     updateCountdown();
 
-    // Set current year in footer
     document.getElementById('current-year').textContent = new Date().getFullYear();
 });
